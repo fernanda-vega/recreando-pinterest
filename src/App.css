@@ -1,28 +1,14 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+html {
+  box-sizing: border-box;
 }
 
 .main-container{
   padding-top: 65px;
+}
+
+.gridCentered {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .masonry-container {
@@ -30,4 +16,53 @@
   padding-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
+  width: 85%;
+}
+
+.masonry { /* Masonry container */
+  -webkit-column-count: 5;
+  -moz-column-count:5;
+  column-count: 5;
+    -moz-column-gap: 0;
+    -webkit-column-gap: 0;
+    column-gap: 0;
+}
+
+.item {
+  display: inline-flex;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.item img{max-width:100%;}
+
+@media only screen and (max-width: 320px) {
+  .masonry {
+      -moz-column-count: 2;
+      -webkit-column-count: 2;
+      column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px){
+  .masonry {
+      -moz-column-count: 3;
+      -webkit-column-count: 3;
+      column-count: 3;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+  .masonry {
+      -moz-column-count: 4;
+      -webkit-column-count: 4;
+      column-count: 4;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .masonry {
+      -moz-column-count: 5;
+      -webkit-column-count: 5;
+      column-count: 5;
+  }
 }

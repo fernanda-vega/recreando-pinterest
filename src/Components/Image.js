@@ -11,12 +11,19 @@ class Image extends Component{
   
     render(){
         return(
-            <div className="ima-container">
+            <div className="item">
+                            <div className="ima-container">
                 <div className="ima-display">
-                    <a href={this.props.large}> 
-                        <img className="img" src={this.props.url} alt=""/>
+                    <a href=""> 
+                        <img src={this.props.url} alt=""/>
+                        <div className="ima-detail">
+                            <p className="ima-title">{this.props.tags}</p>
+                            <p className="ima-user">{this.props.author}</p>
+                        </div>
                     </a>
                 </div>
+            </div>
+
             </div>
         )
     }

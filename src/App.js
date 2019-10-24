@@ -3,7 +3,6 @@ import Navbar from './Components/Navbar';
 //import InfiniteScroll from 'react-infinite-scroller';
 import Image from './Components/Image';
 import './App.css'
-//import Masonry from 'react-masonry-css'
 
 class App extends Component {
   constructor() {
@@ -26,25 +25,28 @@ class App extends Component {
   
   //mostrando las fotos
   showImg(){
-    console.log(this.state.images);
     return(
       this.state.images.map((image, index) => {
         return (
-          <Image key={index} url={image.previewURL} large={image.largeImageURL}/>
+          <Image  key={index} url={image.largeImageURL} tags={image.tags} author={image.user}/>
         )
       })
     )
   }
 
   render(){
+
     return (
       <div className="App">
         <header>
           <Navbar/>
         </header>
-        <main className="main-container">
+        <main className="main-container gridCentered">
           <div className="masonry-container">
-            <this.showImg/>
+            <div className="masonry">
+              <this.showImg/>
+
+            </div>
           </div>
         </main>
       </div>
