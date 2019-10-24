@@ -6,14 +6,33 @@ class Image extends Component{
 
     constructor(props) {
         super(props)
-        this.state = { }
+        this.state = { 
+            hover: false
+        }
+        this.toggleHover = this.toggleHover.bind(this)
     }
   
+    toggleHover() {
+        this.setState({ hover: !this.state.hover})
+    }
+
+    
+
     render(){
+        let photoOverlay;
+        if (this.state.hover) {
+            photoOverlay = {display:'block', height: this.props.height}
+
+          
+          } else {
+            photoOverlay = {display:'none'}
+          }
+
         return(
-            <div className="item">
+            <div className="item" onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>
                 <div className="ima-display">
-                    <a href=""> 
+                    <a>
+                        <div style={photoOverlay} className="overlay"></div>
                         <img src={this.props.url} alt=""/>
                         <div className="ima-detail">
                             <p className="ima-title">{this.props.tags}</p>

@@ -23,12 +23,3 @@ html {
   background-clip: padding-box;
 }
 
-.my-masonry-grid_column > div { 
-  top: 0px;
-  left: 0px;
-  transform: translateX(0px) translateY(0px);
-  width: 252px;
-  padding-bottom: 16px;
-  padding-left: 8px;
-  padding-right: 8px
-}

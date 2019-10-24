@@ -1,4 +1,3 @@
-
 .ima-display{
    cursor: zoom-in;
    display: block;
@@ -7,15 +6,15 @@
 }
 
 .ima-display img {
-   width: 252px;
+   width: 236px;
    height: 100%;
    border-radius: 16px;
    background: #e8e8e8;
 }
 
-.ima-detail {
-      padding: 8px 6px 16px;
 
+.ima-detail {
+   padding: 8px 6px 16px;
 }
 
 .ima-title{
@@ -42,3 +41,24 @@ a {
 .ima-detail p {
    margin: 0;
 }
+
+.overlay {
+   background: rgba(0, 0, 0, 0.2);
+   position: absolute;
+   border-radius: 16px;
+   transform: translateX(0px) translateY(0px);
+   width: 236px;
+
+}
+
+
+.item { 
+   top: 0px;
+   left: 0px;
+   transform: translateX(0px) translateY(0px);
+   width: 236px;
+   padding-bottom: 16px;
+   padding-left: 8px;
+   padding-right: 8px
+ }
+ 

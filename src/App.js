@@ -12,7 +12,7 @@ class App extends Component {
       images: [],
       query:'',
       start: 1,
-      count: 1
+      count: 1,
     }
     this.showImg = this.showImg.bind(this);
     this.scrollData = this.scrollData.bind(this);
@@ -37,10 +37,12 @@ class App extends Component {
 
 //mostrando las fotos
   showImg(){
+    console.log(this.state.images)
+    
     return(
       this.state.images.map((image, index) => {
         return (
-          <Image  key={index} url={image.webformatURL} tags={image.tags} author={image.user}/>
+          <Image  key={index} url={image.webformatURL} tags={image.tags} author={image.user} height={(236*image.webformatHeight)/image.webformatWidth}/>
         )
       })
     )
