@@ -12,7 +12,6 @@ class Image extends Component{
     render(){
         return(
             <div className="item">
-                            <div className="ima-container">
                 <div className="ima-display">
                     <a href=""> 
                         <img src={this.props.url} alt=""/>
@@ -22,8 +21,6 @@ class Image extends Component{
                         </div>
                     </a>
                 </div>
-            </div>
-
             </div>
         )
     }
