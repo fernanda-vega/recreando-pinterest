@@ -12,7 +12,7 @@ function Navbar() {
                <div className="search-container">
                   <div className="search-bar">
                      <svg className="search-icon" height="20" width="20" viewBox="0 0 24 24" aria-label="Icono de búsqueda" role="img"><path d="M10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6m13.12 2.88l-4.26-4.26A9.842 9.842 0 0 0 20 10c0-5.52-4.48-10-10-10S0 4.48 0 10s4.48 10 10 10c1.67 0 3.24-.41 4.62-1.14l4.26 4.26a3 3 0 0 0 4.24 0 3 3 0 0 0 0-4.24"></path></svg>
-                     <input className="search-input" placeholder="Buscar"></input>
+                     <input className="search-input" placeholder="Buscar" type='text'></input>
                   </div>
                </div>
             </div>
@@ -21,8 +21,8 @@ function Navbar() {
                <div className="nav-button"><div className="btn">Inicio</div></div>
                <div className="nav-button"><div className="btn">Siguiendo</div></div>
                <div className="nav-button">
-                  <div className="icon"><div className="user-icon"></div></div>
-                  <div className="btn">Username</div>
+                  <div className="icon"><div className="user-icon">F</div></div>
+                  <div className="btn">Fernanda</div>
                </div>
                <span className="nav-separator"></span>
                <div className="pinterest-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18 12.5a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 18 12.5m-6 0a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 12 12.5m-6 0a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 6 12.5M12 0C5.925 0 1 4.925 1 11c0 2.653.94 5.086 2.504 6.986L2 24l5.336-3.049A10.93 10.93 0 0 0 12 22c6.075 0 11-4.925 11-11S18.075 0 12 0" fillRule="evenodd" clipRule="evenodd" fill='#8e8e8e'></path></svg></div>

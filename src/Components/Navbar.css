@@ -116,6 +116,11 @@
    width: 24px;
    background-color: #8e8e8e;
    border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   font-weight: 700;
 }
 
 .icon {

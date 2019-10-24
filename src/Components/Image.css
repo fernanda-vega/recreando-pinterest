@@ -1,0 +1,25 @@
+.ima-container{
+   top: 0px;
+   left: 0px;
+   transform: translateX(0px) translateY(0px);
+   width: 252px;
+   padding-bottom: 16px;
+   padding-left: 8px;
+   padding-right: 8px
+}
+
+.ima-display{
+   background: #e8e8e8;
+   border-radius: 16px;
+   cursor: zoom-in;
+   display: block;
+   overflow: hidden;
+   box-sizing: border-box;
+   flex: 1 1 auto;
+   min-width: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
