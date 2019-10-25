@@ -40,6 +40,7 @@ a {
 
 .ima-detail p {
    margin: 0;
+   text-transform: capitalize;
 }
 
 .overlay {
@@ -51,7 +52,6 @@ a {
 
 }
 
-
 .item { 
    top: 0px;
    left: 0px;
@@ -61,4 +61,58 @@ a {
    padding-left: 8px;
    padding-right: 8px
  }
+
+ .btn-group{
+   position: absolute;
+   top: 0;
+   padding: 0;
+   margin: 12px;
+   display: flex;
+   width: 84%;
+ }
+
+ .btn-group button {
+   padding: 0px 16px; 
+   cursor: pointer; 
+   float: left; 
+   border:none;
+   text-align: left;
+   font-weight: 600;
+   font-size: 14px;
+   letter-spacing: -.4px;
+   text-transform: capitalize;
+   height: 44px;
+ }
+  
+ .btn-group:after {
+   content: "";
+   clear: both;
+   display: table;
+ }
  
+.save-btn{
+   right: 18px;
+   border-radius: 0px 10px 10px 0;
+   background: rgba(230, 0, 35, 0.9);
+   color: #fff;
+}
+.save-btn:hover{
+   background: #E60023;
+}
+
+.dropdown-btn{
+   left: 18px;
+   border-radius: 10px 0 0 10px;
+   color: #333;
+   background: rgba(255, 255, 255, 0.9);
+   width: 100%;
+} 
+
+.dropdown-btn:hover{
+   background: #fff;
+}
+
+.drop-arrow{
+   float: right;
+   margin-top: 4px;
+}

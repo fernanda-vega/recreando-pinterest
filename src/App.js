@@ -37,13 +37,30 @@ class App extends Component {
 
 //mostrando las fotos
   showImg(){
-    console.log(this.state.images)
-    
     return(
       this.state.images.map((image, index) => {
+      if (image.tags.split(",")[0].length > 8 ){
         return (
-          <Image  key={index} url={image.webformatURL} tags={image.tags} author={image.user} height={(236*image.webformatHeight)/image.webformatWidth}/>
+          <Image  
+            key={index} 
+            url={image.webformatURL} 
+            tags={image.tags} 
+            author={image.user} 
+            height={(236*image.webformatHeight)/image.webformatWidth}
+            dropTag={image.tags.split(",")[0].substr(0,8)+"..."}
+            />
         )
+      }
+      return (
+        <Image  
+        key={index} 
+        url={image.webformatURL} 
+        tags={image.tags} 
+        author={image.user} 
+        height={(236*image.webformatHeight)/image.webformatWidth}
+        dropTag={image.tags.split(",")[0]}
+        />
+      )
       })
     )
   }
