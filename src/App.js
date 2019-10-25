@@ -24,9 +24,12 @@ class App extends Component {
     .then(response => response.json())
     .then(data => this.setState({images: data.hits}))
     .catch(error => console.log('parsing failed', error))
+
   }
 
   scrollData(){
+    console.log(this.state.images);
+
     const { start } = this.state;
     this.setState({ start: this.state.start + this.state.count});
     fetch(`https://pixabay.com/api/?key=1858501-7166f0d9f959bd64071f003d7&image_type=photo&orientation=vertical&page=${start}&per_page=20`)
@@ -48,6 +51,7 @@ class App extends Component {
             author={image.user} 
             height={(236*image.webformatHeight)/image.webformatWidth}
             dropTag={image.tags.split(",")[0].substr(0,8)+"..."}
+            web={image.pageURL.substr(8,12)+"..."}
             />
         )
       }
@@ -59,6 +63,7 @@ class App extends Component {
         author={image.user} 
         height={(236*image.webformatHeight)/image.webformatWidth}
         dropTag={image.tags.split(",")[0]}
+        web={image.pageURL.substr(8,12).split("/")[0]+"..."}
         />
       )
       })

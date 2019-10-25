@@ -48,8 +48,7 @@ a {
    position: absolute;
    border-radius: 16px;
    transform: translateX(0px) translateY(0px);
-   width: 236px;
-
+   width: 236px;   
 }
 
 .item { 
@@ -100,19 +99,66 @@ a {
    background: #E60023;
 }
 
-.dropdown-btn{
-   left: 18px;
+.dropdown-btn {
    border-radius: 10px 0 0 10px;
    color: #333;
    background: rgba(255, 255, 255, 0.9);
    width: 100%;
 } 
 
-.dropdown-btn:hover{
+.dropdown-btn:hover, .share-btn:hover, .more-btn:hover{
    background: #fff;
 }
 
 .drop-arrow{
    float: right;
    margin-top: 4px;
+}
+
+.share-group {
+   display: flex;
+   flex-direction: row;
+}
+
+.share-btn, .more-btn {
+   border-radius: 50%;
+   width: 32px;
+   height: 32px;
+   border: none;
+   color: #333;
+   background: rgba(255, 255, 255, 0.9);
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 9px;;
+}
+
+.web-link {
+   cursor: pointer;
+   color: #333;
+   background: rgba(255, 255, 255, 0.9);
+   border-radius: 50px;
+   height: 32px;
+   font-size: 14px;
+   font-weight: 600;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   letter-spacing: -.4px;
+   padding: 0 12px;
+}
+
+.bottom-btn {
+   position: absolute;
+   bottom: 0;
+   padding: 12px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.ico-link {
+   margin-right: 9px;
+   fill: #333;;
 }
